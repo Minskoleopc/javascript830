@@ -111,7 +111,6 @@ console.log(q15)
 // })
 // console.log(q16)
 
-
 // filter()
 let marks = [44,55,66,22,33,44,55,66,77]
 // return me marks greater than 50
@@ -129,11 +128,125 @@ let q18 = names2.filter(function(el,index,arr){
 console.log(q18)
 
 
+// map(), filter(), reduce(), forEach()
+// some(), every() , find(), findIndex()
 
 
+let numbersA = [10,20,30,40,50]
+let e1  = numbersA.map(function(el,index,arr){
+   //console.log(el,index,arr)
+   return  el * 10
+})
+console.log(e1)
+
+//----------------------------------------------
+numbersA = [10,20,30,40,50]
+let e2 = numbersA.filter(function(el,index,arr){
+    return el > 20
+})
+console.log(e2)
+//-----------------------------------------------------
+numbersA = [10,20,30,40,50]
+let e3 = numbersA.reduce(function(acc,el,index,arr){
+    return acc + el
+},0)
+console.log(e3)
+
+//--------------------------------------------------------
+numbersA = [10,20,30,40,50]
+let e4 = numbersA.forEach(function(el,index,arr){
+    console.log(el * 2)
+})
+console.log(e4)
+
+//-------------------------------------
+
+numbersA = [10,20,30,40,50]
+let e5 = numbersA.filter(function(el,index,arr){
+    return el >= 30
+})
+console.log(e5)
+
+let e6 = numbersA.find(function(el,index,arr){
+    return el >= 30
+})
+console.log(e6)
+
+let e7 = numbersA.findIndex(function(el,index,arr){
+    return el >= 30
+})
+console.log(e7)
 
 
+// map(), filer(),reduce(),forEach(), find(),findIndex()
 
+// some(),every()
+numbersA = [10,20,30,40,50]
+let e8 = numbersA.every(function(el,index,arr){
+    return el > 5
+})
+console.log(e8)
+
+
+numbersB = [10,20,30,40,50]
+let e9 = numbersA.some(function(el,index,arr){
+    return el > 150
+})
+console.log(e9)
+
+// slice 
+//                0        1        2         3
+let citiesq  = ["pune","nagpur","mumbai","banglore"]
+//                -4       -3          -2        -1
+//citiesq.slice(startIndex,endIndex(not inclusive))
+console.log(citiesq.slice(2))
+console.log(citiesq.slice(-2))
+console.log(citiesq.slice(1-2))
+console.log(citiesq.slice(0,3))
+console.log(citiesq.slice(-1,-4))
+
+// splice()
+//           0         1       2       3
+citiesq  = ["pune","nagpur","mumbai","banglore"]
+
+//citiesq.unshift()
+//citiesq.pop()
+//citiesq.splice(startIndex,NumberOFElementedTobeDeleted)
+
+//citiesq.splice(2,1)
+//citiesq.splice(1,2)
+//console.log(citiesq)
+
+citiesq.splice(1,2,"wardha","jaipur")
+console.log(citiesq)
+
+
+// flat 
+//             0         1         2
+//          0  1  2    0   1  2   0   1  2
+let arr = [[11,22,33],[44,55,66],[77,88,99]]
+console.log(arr[0][0]) // 11
+console.log(arr[1][1])// 55
+console.log(arr[2][2])// 99
+
+let q3a = arr.flat()
+console.log(q3a)
+
+let a = [22,33,44]
+let qqq = a.at(2)
+console.log(qqq)
+
+// fill 
+//          0   1  2  3  4  5 6
+let qqqQ = [11,22,33,44,55,66,77]
+let qqqqq = qqqQ.fill(undefined,1,4)
+console.log(qqqqq)
+
+// let and const , function , comparison , logical 
+// conditional statement 
+
+
+// Loops 
 
 
 
