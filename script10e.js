@@ -42,5 +42,10 @@ else {
     console.log('Guess is incorrect')
 }
 
+// for loop
+
+
+
+// while loop
 
 
