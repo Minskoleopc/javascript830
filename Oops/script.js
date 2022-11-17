@@ -57,7 +57,6 @@ console.log(pranali instanceof Person)
 console.log(amol.__proto__ === Person.prototype)
 console.log(pranali.__proto__ === Person.prototype)
 
-
 console.log(amol)
 console.log(pranali)
 // amol.displayName()
