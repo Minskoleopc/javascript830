@@ -95,11 +95,11 @@ console.log(names instanceof Array)
 console.log(names2.__proto__ == Array.prototype)
 console.log(names.__proto__ == Array.prototype)
 
-
 // length 
 // 23 push( )......
 console.log(names)
 
+// inbuilt
 // Array.prototype.Chinmay = function(){
 //     console.log('hello')
 // }
@@ -111,3 +111,7 @@ names.length
 // Es6 and Object 
 
 // Oops ES6
+
+console.log(Person)
+
+console.log(amol2)
