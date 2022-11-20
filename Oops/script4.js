@@ -122,6 +122,9 @@ PersonB.prototype.displayName = function(){
 
 console.log(PersonB)
 
+// discipline -- 
+// discipline --- freedom
+
 
 
 
