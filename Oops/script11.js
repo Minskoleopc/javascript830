@@ -52,6 +52,5 @@ console.log(q2)
 // }
 q2()
 
-
 // Actual difference let var and const 
 

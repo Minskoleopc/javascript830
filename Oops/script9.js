@@ -70,7 +70,6 @@ class DaughterA extends FatherA {
     
 }
 
-
 let ShirishA = new FatherA("shirish","deshpande")
 let ChinmayA = new SonA("shirish","deshpande","chinmay")
 ChinmayA.displaySonName()
