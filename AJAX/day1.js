@@ -2,7 +2,6 @@ function additionA() {
     console.log("A is called")
 }
 
-
 function additionB() {
     console.log("B is called")
 }
@@ -45,10 +44,7 @@ function GetUserInfoDisplay (){
 }
 
 // GetUserInfoDisplay ()
-
 // call back hell 
-
-
 function getInfoDisplay() {
     setTimeout(function () {
         console.log('user created')
