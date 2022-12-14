@@ -294,7 +294,6 @@ function userInfo(){
     })
 }
 
-
 createUser()
 .then(function(str){
     console.log(str)  
