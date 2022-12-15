@@ -72,7 +72,6 @@
 // }
 // console.log(oo)
 
-
 // program2
 
 // var t = 100
@@ -91,21 +90,20 @@
 // console.log(t)
 
 
-var t = 900
-function add(){
-    var t = 600
-    console.log(t) //600
-}
-console.log(t) // 900
-add()
-console.log(t) // 900
+// var t = 900
+// function add(){
+//     var t = 600
+//     console.log(t) //600
+// }
+// console.log(t) // 900
+// add()
+// console.log(t) // 900
 
-
-var t = 900
-function add(){
-    t = 600
-    console.log(t) // 600
-}
-console.log(t)  // 900
-add()
-console.log(t)  // 600
+// var t = 900
+// function add(){
+//     t = 600
+//     console.log(t) // 600
+// }
+// console.log(t)  // 900
+// add()
+// console.log(t)  // 600
