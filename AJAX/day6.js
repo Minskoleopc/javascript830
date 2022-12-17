@@ -104,7 +104,6 @@ function getInfo(id){
 //     renderHtml(data)
 // })
 
-
 async function getInforamtion(pageNumber){
     let id = await getUserId(pageNumber)
     let data = await getInfo(id)
