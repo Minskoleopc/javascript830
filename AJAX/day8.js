@@ -111,51 +111,63 @@
 // }
 // getUsers2()
 
-async function getUser3(){
-    let a = await Promise.race([
-        new Promise(function(reject){
-            setTimeout(function(){
-                reject("bye")
-            },00)
-        }),
-        new Promise(function(resolve){
-            setTimeout(function(){
-                resolve("hello")
-            },1000)
-        })
-    ])
-    console.log(a)
-}
-getUser3()
+// async function getUser3(){
+//     let a = await Promise.race([
+//         new Promise(function(reject){
+//             setTimeout(function(){
+//                 reject("bye")
+//             },00)
+//         }),
+//         new Promise(function(resolve){
+//             setTimeout(function(){
+//                 resolve("hello")
+//             },1000)
+//         })
+//     ])
+//     console.log(a)
+// }
+//getUser3()
 
 
-async function getUser4(){
-    let a = await Promise.any([
-        new Promise(function(reject){
-            setTimeout(function(){
-                reject("bye1")
-            },1000)
-        }),
-        new Promise(function(reject){
-            setTimeout(function(){
-                reject("bye2")
-            },2000)
-        }),
-        new Promise(function(resolve){
-            setTimeout(function(){
-                resolve("hello1")
-            },3000)
-        }),
-        new Promise(function(resolve){
-            setTimeout(function(){
-                resolve("hello2")
-            },4000)
-        })
+// async function getUser4(){
+//     let a = await Promise.any([
+//         new Promise(function(reject){
+//             setTimeout(function(){
+//                 reject("bye1")
+//             },1000)
+//         }),
+//         new Promise(function(reject){
+//             setTimeout(function(){
+//                 reject("bye2")
+//             },2000)
+//         }),
+//         new Promise(function(resolve){
+//             setTimeout(function(){
+//                 resolve("hello1")
+//             },3000)
+//         }),
+//         new Promise(function(resolve){
+//             setTimeout(function(){
+//                 resolve("hello2")
+//             },4000)
+//         })
 
-    ])
-    console.log(a)
-}
-getUser4()
+//     ])
+//     console.log(a)
+// }
+// getUser4()
+
+const wait = new Promise(function(resolve){
+    setTimeout(function(resolve){
+    },1000)
+})
+
+console.time('timeSerial')
+await wait();
+await wait()
+console.timeEnd('timeSerial')
+
+
 
 
 
