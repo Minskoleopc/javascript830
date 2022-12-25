@@ -131,7 +131,6 @@ let p4 = new Promise(function (resolve, reject) {
 // }
 // getUsers3()
 
-
 async function getUsers4() {
         let a = await Promise.any([
             p1, p2, p3, p4
