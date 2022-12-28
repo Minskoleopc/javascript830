@@ -71,3 +71,6 @@ async function getUserInTime(id,sec){
     console.log(a)
 }
 getUserInTime(1,0.000000001)
+
+// AJAX ----> Promise.any()
+// Promise.allSettled()
