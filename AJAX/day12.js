@@ -1,39 +1,39 @@
 
-// async execution parallel 
+// // async execution parallel 
 
 
 
-function one() {
-    return new Promise(function (resolve, reject) {
-        setTimeout(function () {
-            resolve('one')
-        }, 1000)
-    })
-}
+// function one() {
+//     return new Promise(function (resolve, reject) {
+//         setTimeout(function () {
+//             resolve('one')
+//         }, 1000)
+//     })
+// }
 
-function two() {
-    return new Promise(function (resolve, reject) {
-        setTimeout(function () {
-            resolve('two')
-        }, 1000)
-    })
-}
+// function two() {
+//     return new Promise(function (resolve, reject) {
+//         setTimeout(function () {
+//             resolve('two')
+//         }, 1000)
+//     })
+// }
 
-function three() {
-    return new Promise(function (resolve, reject) {
-        setTimeout(function () {
-            resolve('three')
-        }, 1000)
-    })
-}
+// function three() {
+//     return new Promise(function (resolve, reject) {
+//         setTimeout(function () {
+//             resolve('three')
+//         }, 1000)
+//     })
+// }
 
-function four() {
-    return new Promise(function (resolve, reject) {
-        setTimeout(function () {
-            reject('four')
-        }, 1000)
-    })
-}
+// function four() {
+//     return new Promise(function (resolve, reject) {
+//         setTimeout(function () {
+//             reject('four')
+//         }, 1000)
+//     })
+// }
 
 
 // Promise.all()
@@ -71,38 +71,38 @@ getUser2()
 // Promise.race()
 
 
-function five() {
-    return new Promise(function (resolve, reject) {
-        setTimeout(function () {
-            resolve('five')
-        },1000)
-    })
-}
+// function five() {
+//     return new Promise(function (resolve, reject) {
+//         setTimeout(function () {
+//             resolve('five')
+//         },1000)
+//     })
+// }
 
-function six() {
-    return new Promise(function (resolve, reject) {
-        setTimeout(function () {
-            reject('six')
-        },1000)
-    })
-}
+// function six() {
+//     return new Promise(function (resolve, reject) {
+//         setTimeout(function () {
+//             reject('six')
+//         },1000)
+//     })
+// }
 
 
-async function getUser3() {
+// async function getUser3() {
 
-    try {
-        let a1 = await Promise.race([
-            five(),
-            six()
-        ])
-        console.log(a1)
-    }
-    catch{
-        console.log("error")
-    }
+//     try {
+//         let a1 = await Promise.race([
+//             five(),
+//             six()
+//         ])
+//         console.log(a1)
+//     }
+//     catch{
+//         console.log("error")
+//     }
    
-}
-getUser3()
+// }
+// getUser3()
 
 
 
